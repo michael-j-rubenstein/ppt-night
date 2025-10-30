@@ -52,3 +52,31 @@
   width: 100%;
   max-width: 800px;
 }
+
+@media (max-width: 768px) {
+  .slide-header {
+    padding: 3px 6px;
+  }
+
+  .slide-header h2 {
+    font-size: 1.3em;
+  }
+
+  .slide-header p {
+    font-size: 0.9em;
+  }
+
+  .slide-content {
+    padding: 20px 15px;
+    overflow-y: auto;
+  }
+
+  .question {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+  }
+
+  .options-grid {
+    gap: 15px;
+  }
+}

@@ -27,6 +27,7 @@
 
 @media (max-width: 768px) {
   .presentation-container {
-    height: 95vh;
+    height: 98vh;
+    max-width: 100%;
   }
 }

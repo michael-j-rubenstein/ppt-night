@@ -11,9 +11,7 @@
   padding: 20px;
   border: 2px solid;
   border-color: #ffffff #000000 #000000 #ffffff;
-  box-shadow:
-    inset 1px 1px 0 #dfdfdf,
-    inset -1px -1px 0 #808080;
+  box-shadow: inset 1px 1px 0 #dfdfdf, inset -1px -1px 0 #808080;
 }
 
 .face-preview {
@@ -135,7 +133,8 @@
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -193,9 +192,7 @@
   color: #000000;
   border: 2px solid;
   border-color: #ffffff #000000 #000000 #ffffff;
-  box-shadow:
-    inset 1px 1px 0 #dfdfdf,
-    inset -1px -1px 0 #808080;
+  box-shadow: inset 1px 1px 0 #dfdfdf, inset -1px -1px 0 #808080;
   padding: 8px 30px;
   font-size: 1.2em;
   cursor: pointer;
@@ -210,22 +207,103 @@
 
 .skip-btn:active {
   border-color: #000000 #ffffff #ffffff #000000;
-  box-shadow:
-    inset -1px -1px 0 #dfdfdf,
-    inset 1px 1px 0 #808080;
+  box-shadow: inset -1px -1px 0 #dfdfdf, inset 1px 1px 0 #808080;
   padding: 9px 29px 7px 31px;
 }
 
 @media (max-width: 768px) {
   .results-container {
     flex-direction: column;
+    gap: 20px;
+    padding-top: 400px;
+  }
+
+  .final-face {
+    padding: 10px;
+  }
+
+  .face-preview {
+    width: 200px;
+    height: 550px;
+  }
+
+  .shape-part img {
+    width: 130px;
+    height: 160px;
+    right: 20px;
+  }
+
+  .hair-part img {
+    width: 190px;
+    right: -5px;
+  }
+
+  .eyes-part img {
+    width: 80px;
+    height: 40px;
+    top: 45px;
+    right: 48px;
+  }
+
+  .nose-part img {
+    height: 32px;
+    top: 70px;
+    right: 75px;
+  }
+
+  .lips-part img {
+    height: 24px;
+    top: 95px;
+    right: 68px;
+  }
+
+  .body-part img {
+    height: 400px;
+    top: 120px;
+  }
+
+  .selections-summary {
+    width: 100%;
+  }
+
+  .summary-item {
+    padding: 10px 15px;
+  }
+
+  .summary-item h3 {
+    font-size: 1em;
+  }
+
+  .summary-item p {
+    font-size: 0.9em;
   }
 
   .loading-title {
-    font-size: 1.8em;
+    font-size: 1.5em;
+    padding: 0 10px;
   }
 
   .loading-bar-wrapper {
     max-width: 90%;
+    padding: 0 10px;
+  }
+
+  .loading-message {
+    max-width: 90%;
+    font-size: 0.9em;
+    padding: 10px 15px;
+  }
+
+  .loading-percentage {
+    font-size: 1.2em;
+  }
+
+  .skip-btn {
+    padding: 6px 20px;
+    font-size: 1em;
+  }
+
+  .skip-btn:active {
+    padding: 7px 19px 5px 21px;
   }
 }

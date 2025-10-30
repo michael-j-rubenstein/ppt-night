@@ -143,7 +143,7 @@ export const slidesData = [
         actualLabel: "Sixnine Teeth",
       },
       {
-        label: "tooootthhhh in da middle of da mouthhhhhhhhhhhhhhhhhhhhhh",
+        label: "tooootthhhh in da middle of da mouthhhhhhhhhhhh hhhhhhhhhh",
         emoji: "",
         image: "images/lips/tom-cruise-smile.png",
         actualLabel: "Tom Cruise Smile",

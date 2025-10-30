@@ -67,3 +67,37 @@
 .progress-dot.completed {
   background: #008000; /* Classic Windows green */
 }
+
+@media (max-width: 768px) {
+  .navigation {
+    padding: 6px 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-btn {
+    padding: 5px 15px;
+    font-size: 0.9em;
+    min-width: 70px;
+  }
+
+  .nav-btn:active:not(:disabled) {
+    padding: 6px 14px 4px 16px;
+  }
+
+  .progress {
+    gap: 6px;
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .progress-dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  .progress-dot.active {
+    width: 12px;
+  }
+}

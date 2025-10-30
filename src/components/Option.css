@@ -56,3 +56,23 @@
   font-weight: bold;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .option {
+    padding: 15px;
+    min-height: 150px;
+  }
+
+  .option-image {
+    font-size: 3em;
+  }
+
+  .option-image img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .option-label {
+    font-size: 1em;
+  }
+}

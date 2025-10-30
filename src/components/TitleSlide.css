@@ -48,3 +48,26 @@
     inset 1px 1px 0 #808080;
   padding: 9px 39px 7px 41px; /* Simulate button press */
 }
+
+@media (max-width: 768px) {
+  .title-slide-content {
+    padding: 20px;
+  }
+
+  .title-slide-content h1 {
+    font-size: 2em;
+  }
+
+  .title-slide-content p {
+    font-size: 1.2em;
+  }
+
+  .start-btn {
+    padding: 8px 30px;
+    font-size: 1.1em;
+  }
+
+  .start-btn:active {
+    padding: 9px 29px 7px 31px;
+  }
+}
