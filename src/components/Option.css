@@ -1,0 +1,42 @@
+.option {
+  background: #f8f9fa;
+  border: 4px solid transparent;
+  border-radius: 15px;
+  padding: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  min-height: 180px;
+  justify-content: center;
+}
+
+.option:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+  border-color: #667eea;
+}
+
+.option.selected {
+  border-color: #667eea;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+}
+
+.option-image {
+  font-size: 4em;
+}
+
+.option-image img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.option-label {
+  font-size: 1.2em;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
