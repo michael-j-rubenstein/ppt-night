@@ -215,7 +215,7 @@
   .results-container {
     flex-direction: column;
     gap: 20px;
-    padding-top: 400px;
+    padding-top: 100px;
   }
 
   .final-face {
