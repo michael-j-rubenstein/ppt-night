@@ -1,37 +1,50 @@
 .title-slide {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #c0c0c0; /* Windows gray */
 }
 
 .title-slide-content {
   text-align: center;
-  color: white;
+  color: #000000;
   padding: 40px;
 }
 
 .title-slide-content h1 {
   font-size: 3em;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 0 #ffffff; /* Classic embossed text */
+  font-weight: bold;
 }
 
 .title-slide-content p {
   font-size: 1.5em;
-  opacity: 0.9;
   margin-bottom: 40px;
+  color: #000000;
 }
 
 .start-btn {
-  background: white;
-  color: #667eea;
-  border: none;
-  padding: 15px 50px;
-  border-radius: 50px;
+  background: #c0c0c0;
+  color: #000000;
+  border: 2px solid;
+  border-color: #ffffff #000000 #000000 #ffffff;
+  box-shadow:
+    inset 1px 1px 0 #dfdfdf,
+    inset -1px -1px 0 #808080;
+  padding: 8px 40px;
   font-size: 1.3em;
   cursor: pointer;
   font-weight: bold;
-  transition: all 0.3s ease;
+  font-family: "MS Sans Serif", "Microsoft Sans Serif", system-ui, sans-serif;
+  min-width: 100px;
 }
 
 .start-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background: #c0c0c0;
+}
+
+.start-btn:active {
+  border-color: #000000 #ffffff #ffffff #000000;
+  box-shadow:
+    inset -1px -1px 0 #dfdfdf,
+    inset 1px 1px 0 #808080;
+  padding: 9px 39px 7px 41px; /* Simulate button press */
 }

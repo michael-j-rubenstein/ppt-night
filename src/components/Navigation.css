@@ -2,55 +2,68 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
-  background: #f8f9fa;
-  border-top: 1px solid #e0e0e0;
+  padding: 8px 12px;
+  background: #c0c0c0;
+  border-top: 2px solid;
+  border-color: #ffffff #000000 #000000 #ffffff;
   flex-shrink: 0;
 }
 
 .nav-btn {
-  background: #667eea;
-  color: white;
-  border: none;
-  padding: 12px 30px;
-  border-radius: 8px;
+  background: #c0c0c0;
+  color: #000000;
+  border: 2px solid;
+  border-color: #ffffff #000000 #000000 #ffffff;
+  box-shadow:
+    inset 1px 1px 0 #dfdfdf,
+    inset -1px -1px 0 #808080;
+  padding: 6px 20px;
   font-size: 1em;
   cursor: pointer;
-  transition: all 0.3s ease;
-  font-weight: 600;
+  font-weight: bold;
+  font-family: "MS Sans Serif", "Microsoft Sans Serif", system-ui, sans-serif;
+  min-width: 80px;
 }
 
 .nav-btn:hover:not(:disabled) {
-  background: #5568d3;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  background: #c0c0c0;
+}
+
+.nav-btn:active:not(:disabled) {
+  border-color: #000000 #ffffff #ffffff #000000;
+  box-shadow:
+    inset -1px -1px 0 #dfdfdf,
+    inset 1px 1px 0 #808080;
+  padding: 7px 19px 5px 21px;
 }
 
 .nav-btn:disabled {
-  background: #ccc;
+  background: #c0c0c0;
+  color: #808080;
   cursor: not-allowed;
+  text-shadow: 1px 1px 0 #ffffff;
 }
 
 .progress {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
 }
 
 .progress-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #ccc;
-  transition: all 0.3s ease;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border: 2px solid;
+  border-color: #808080 #ffffff #ffffff #808080;
+  box-shadow: inset 1px 1px 0 #000000;
 }
 
 .progress-dot.active {
-  background: #667eea;
-  width: 40px;
-  border-radius: 6px;
+  background: #000080;
+  width: 16px;
 }
 
 .progress-dot.completed {
-  background: #4caf50;
+  background: #008000; /* Classic Windows green */
 }

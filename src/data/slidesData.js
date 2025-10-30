@@ -9,7 +9,7 @@ export const slidesData = [
     type: "title",
     title: "The Perfect Woman",
     subtitle: "by michael",
-    buttonText: "ONWARD AND BEYOND",
+    buttonText: "go forth unto what lieth next",
   },
 
   {

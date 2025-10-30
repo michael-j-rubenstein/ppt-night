@@ -5,8 +5,8 @@
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: "MS Sans Serif", "Microsoft Sans Serif", system-ui, sans-serif;
+  background: #008080; /* Classic Windows 95 teal desktop */
   min-height: 100vh;
   display: flex;
   justify-content: center;

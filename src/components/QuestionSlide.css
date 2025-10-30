@@ -1,14 +1,23 @@
 .slide-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(to right, #000080, #1084d0); /* Windows 95 title bar blue */
   color: white;
-  padding: 20px 40px;
-  text-align: center;
+  padding: 4px 8px;
+  text-align: left;
   flex-shrink: 0;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-bottom: 2px solid;
+  border-color: #ffffff #000000 #000000 #ffffff;
 }
 
 .slide-header h2 {
   font-size: 1.8em;
   margin-bottom: 5px;
+  flex: 1;
+  text-align: center;
 }
 
 .slide-header p {
@@ -25,11 +34,12 @@
   justify-content: center;
   overflow-y: auto;
   min-height: 0;
+  background: #c0c0c0;
 }
 
 .question {
   font-size: 1.8em;
-  color: #667eea;
+  color: #000080; /* Windows blue */
   margin-bottom: 30px;
   text-align: center;
   font-weight: bold;

@@ -11,23 +11,41 @@ const ResultsSlide = ({ title, subtitle, selections }) => {
     setProgress(0);
 
     // Animate progress bar
+    let pauseTimer = null;
     const progressInterval = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) {
           clearInterval(progressInterval);
           return 100;
         }
-        return prev + 1; // Increase by 2% every interval
+        // Pause at 88% for 4 seconds
+        if (prev === 88) {
+          clearInterval(progressInterval);
+          pauseTimer = setTimeout(() => {
+            const resumeInterval = setInterval(() => {
+              setProgress((p) => {
+                if (p >= 100) {
+                  clearInterval(resumeInterval);
+                  return 100;
+                }
+                return p + 1;
+              });
+            }, 200);
+          }, 4000); // 4 second pause
+          return 88;
+        }
+        return prev + 1; // Increase by 1% every interval
       });
-    }, 200); // Update every 100ms (100ms * 50 steps = 5000ms = 5 seconds)
+    }, 200); // Update every 200ms
 
-    // Auto-complete after 5 seconds
+    // Auto-complete after 20 seconds
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 20000);
+    }, 24000);
 
     return () => {
       clearTimeout(timer);
+      clearTimeout(pauseTimer);
       clearInterval(progressInterval);
     };
   }, []);
@@ -51,7 +69,7 @@ const ResultsSlide = ({ title, subtitle, selections }) => {
             </div>
             <span className="loading-percentage">{Math.round(progress)}%</span>
           </div>
-          <p>
+          <p className="loading-message">
             {progress < 20
               ? "generating..."
               : progress < 40
